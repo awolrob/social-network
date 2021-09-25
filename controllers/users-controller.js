@@ -35,8 +35,6 @@ const usersController = {
       })
       .select('-__v')
       .then(dbUserData => {
-        console.log(dbUserData.thoughts[0]._id.toString())
-        console.log(dbUserData.username)
         res.json(dbUserData)
       })
       .catch(err => {

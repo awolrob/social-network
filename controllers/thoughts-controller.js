@@ -38,7 +38,6 @@ const thoughtController = {
 
   // delete Thought by ID
   deleteThoughtById({ params }, res) {
-    console.log(params);
     Thought.findOneAndDelete({ _id: params.id })
       .then(dbThoughtData => res.json(dbThoughtData))
       .catch(err => res.json(err));
@@ -71,7 +70,6 @@ const thoughtController = {
 
   // add a friend id to user 
   postReaction({ params, body }, res) {
-    console.log(body)
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $push: { reactions: body } },
