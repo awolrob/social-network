@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, Thought } = require('../models');
 
 const usersController = {
   // get all Users
@@ -34,7 +34,11 @@ const usersController = {
         select: '-__v'
       })
       .select('-__v')
-      .then(dbUserData => res.json(dbUserData))
+      .then(dbUserData => {
+        console.log(dbUserData.thoughts[0]._id.toString())
+        console.log(dbUserData.username)
+        res.json(dbUserData)
+      })
       .catch(err => {
         console.log(err);
         res.sendStatus(400);
@@ -65,13 +69,10 @@ const usersController = {
   deleteUser({ params }, res) {
     User.findOneAndDelete({ _id: params.id })
       .then(dbUserData => {
-        console.log('deleting user: ' + params.id + ' thoughts : ', dbUserData.thoughts[0]._id);
-        for (i = 0; i < dbUserData.thoughts.length; i++) {
-          // deleteThoughtById(dbUserData.thoughts[i]._id);
-          console.log('lost tho0ughts ',dbUserData.thoughts[i]._id);
-          console.log('lost tho0ughts ',dbUserData.thoughts[i].Thoughts.thoughtText
-        }
-        res.json(dbUserData)
+        return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } })
+      })
+      .then(() => {
+        res.sendStatus(200)
       })
       .catch(err => res.json(err));
   }

@@ -38,6 +38,7 @@ const thoughtController = {
 
   // delete Thought by ID
   deleteThoughtById({ params }, res) {
+    console.log(params);
     Thought.findOneAndDelete({ _id: params.id })
       .then(dbThoughtData => res.json(dbThoughtData))
       .catch(err => res.json(err));
@@ -45,7 +46,7 @@ const thoughtController = {
 
   // createThought
   createThought({ body }, res) {
-    console.log(body)
+    
     Thought.create(body)
       .then(dbThoughtData => {
         User.findOneAndUpdate
