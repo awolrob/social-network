@@ -64,7 +64,15 @@ const usersController = {
   // delete user by ID
   deleteUser({ params }, res) {
     User.findOneAndDelete({ _id: params.id })
-      .then(dbUserData => res.json(dbUserData))
+      .then(dbUserData => {
+        console.log('deleting user: ' + params.id + ' thoughts : ', dbUserData.thoughts[0]._id);
+        for (i = 0; i < dbUserData.thoughts.length; i++) {
+          // deleteThoughtById(dbUserData.thoughts[i]._id);
+          console.log('lost tho0ughts ',dbUserData.thoughts[i]._id);
+          console.log('lost tho0ughts ',dbUserData.thoughts[i].Thoughts.thoughtText
+        }
+        res.json(dbUserData)
+      })
       .catch(err => res.json(err));
   }
 };
