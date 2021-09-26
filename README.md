@@ -63,8 +63,7 @@ The following images were generated using the application:
 ![](./assets/img/18-Bonus-delete-Thoughts-when-User-Deleted.gif)
 
 ## Walkthrough video
-
-![](./assets/mp4/18-NoSQL-Social-Network.mp4)
+![19 NoSQL Video](./assets/mp4/18-NoSQL-Social-Network.mp4)
 
 ## Shared Walkthrough video
 https://drive.google.com/file/d/1qQreup64zlB8_TlER7MOUd3tHe24UQHK/view?usp=sharing
