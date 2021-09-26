@@ -62,5 +62,12 @@ The following images were generated using the application:
 * Bonus: +10 Points - Example deleting a user's associated thoughts when the user is deleted.
 ![](./assets/img/18-Bonus-delete-Thoughts-when-User-Deleted.gif)
 
+## Walkthrough video
+
+![](./assets/mp4/18-NoSQL-Social-Network.mp4)
+
+## Shared Walkthrough video
+https://drive.google.com/file/d/1qQreup64zlB8_TlER7MOUd3tHe24UQHK/view?usp=sharing
+
 - - -
 ` https://github.com/awolrob | 2021-09-26 ` 
