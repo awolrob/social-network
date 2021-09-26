@@ -42,25 +42,25 @@ The following images were generated using the application:
 
 - - -
 * How to start the application’s server
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-1-npm-start.gif)
 - - -
 * Example GET routes for all users and all thoughts using Insomnia Core.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-2-GET-User-Though.gif)
 - - -
 * Example GET routes for a single user and a single thought using Insomnia Core.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-3-GET-single-user-single-thought.gif)
 - - -
 * Example POST, PUT, and DELETE routes for users and thoughts using Insomnia Core.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-4-POST-PUT-and-DELETE-User-Thought.gif)
 - - -
 * Example POST and DELETE routes for a user’s friend list using Insomnia Core.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-5-POST-and-DELETE-Friends-list.gif)
 - - -
 * Example POST and DELETE routes for reactions to thoughts using Insomnia Core.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-6-POST-and-DELETE-reactions.gif)
 
 * Bonus: +10 Points - Example deleting a user's associated thoughts when the user is deleted.
-![](./assets/img/18-nosql-homework-demo-01.gif)
+![](./assets/img/18-Bonus-delete-Thoughts-when-User-Deleted.gif)
 
 - - -
 ` https://github.com/awolrob | 2021-09-26 ` 

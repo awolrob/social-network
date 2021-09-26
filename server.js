@@ -14,6 +14,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network'
   useUnifiedTopology: true
 });
 
+// async function run() {
+//   await mongoose.connection.dropDatabase();
+// }
+// run()
+
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
